@@ -21,7 +21,7 @@ const Post = (props) => {
             <ul>
                 {
                     posts.map((post) => {
-                        return <li key={ post.id }> <Link to={`post/${post.userId}`}>{post.title}</Link> </li>
+                        return <li key={ post.id }> <Link to={`/post/${post.id}`}>{post.title}</Link> </li>
                     })
                 }
             </ul>

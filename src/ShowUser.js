@@ -32,7 +32,7 @@ const ShowUser = (props) => {
             <ul>
                 {
                     userPosts.map((userPost) => {
-                        return <li key={ userPost.id }> <Link to={`post/${userPost.id}`}> {userPost.title} </Link> </li>
+                        return <li key={ userPost.id }> <Link to={`/post/${userPost.id}`}> {userPost.title} </Link> </li>
                     })
                 }
             </ul>

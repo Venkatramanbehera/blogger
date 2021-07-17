@@ -20,13 +20,15 @@ const User = ( props ) => {
             {
                 users.length > 0 && <h1> USERS LIST - {users.length} </h1>
             }
-            <ul>
-                {
-                    users.map((user)=> {
-                        return <li key={ user.id}><Link to={`user/${user.id}`}> { user.name } </Link></li>
-                    })
-                }
-            </ul>
+            <div>
+                <ul>
+                    {
+                        users.map((user)=> {
+                            return <li key={ user.id}><Link to={`user/${user.id}`}> { user.name } </Link></li>
+                        })
+                    }
+                </ul>
+            </div>
         </div>
     )
 }
